@@ -3,9 +3,9 @@
 import * as React from 'react';
 import type { CSSInterpolation } from '@ant-design/cssinjs';
 import { useStyleRegister } from '@ant-design/cssinjs';
-import { theme as antdTheme, ConfigProvider } from 'antd';
-import type { GlobalToken } from 'antd/lib/theme/interface';
-import { resetComponent, clearFix } from 'antd/lib/style';
+import { theme as antdTheme, ConfigProvider } from 'antd5';
+import type { GlobalToken } from 'antd5/lib/theme/interface';
+import { resetComponent, clearFix } from 'antd5/lib/style';
 import { resetForm } from './mixin';
 import { genFormLayoutStyle } from './layout';
 import { genFeedbackStyle } from './feedback';

@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import * as React from 'react';
-import { ConfigProvider } from 'antd';
+import { ConfigProvider } from 'antd5';
 
 import useStyle from './style';
 
@@ -11,7 +11,7 @@ export interface CommentProps {
   actions?: React.ReactNode[];
   /** The element to display as the comment author. */
   author?: React.ReactNode;
-  /** The element to display as the comment avatar - generally an antd Avatar */
+  /** The element to display as the comment avatar - generally an antd5 Avatar */
   avatar?: React.ReactNode;
   /** ClassName of comment */
   className?: string;

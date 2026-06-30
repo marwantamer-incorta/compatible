@@ -4,15 +4,15 @@ import * as ReactDOM from 'react-dom';
 import classNames from 'classnames';
 // import Animate from 'rc-animate';
 import omit from 'rc-util/lib/omit';
-import { Row, Col, Form as V5Form } from 'antd';
-import type { FormItemInputContext } from 'antd/lib/form/context';
+import { Row, Col, Form as V5Form } from 'antd5';
+import type { FormItemInputContext } from 'antd5/lib/form/context';
 import {
   CheckCircleFilled,
   CloseCircleFilled,
   ExclamationCircleFilled,
   LoadingOutlined,
 } from '@ant-design/icons';
-import type { ColProps } from 'antd/lib/grid/col';
+import type { ColProps } from 'antd5/lib/grid/col';
 import CompatibleConsumer from '../CompatibleConsumer';
 import type { ConfigConsumerProps } from '../CompatibleConsumer';
 import warning from '../_util/warning';
@@ -28,7 +28,7 @@ const ValidateStatuses = tuple('success', 'warning', 'error', 'validating', '');
 
 const FormLabelAligns = tuple('left', 'right');
 
-export type FormLabelAlign = typeof FormLabelAligns[number];
+export type FormLabelAlign = (typeof FormLabelAligns)[number];
 
 const IconMap = {
   success: CheckCircleFilled,
@@ -49,7 +49,7 @@ export interface FormItemProps {
   wrapperCol?: ColProps;
   help?: React.ReactNode;
   extra?: React.ReactNode;
-  validateStatus?: typeof ValidateStatuses[number];
+  validateStatus?: (typeof ValidateStatuses)[number];
   hasFeedback?: boolean;
   required?: boolean;
   style?: React.CSSProperties;

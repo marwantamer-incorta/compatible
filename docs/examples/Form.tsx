@@ -9,7 +9,7 @@ import {
   TimePicker,
   Cascader,
   InputNumber,
-} from 'antd';
+} from 'antd5';
 import { Icon, Form } from '../../src';
 
 const { Option } = Select;

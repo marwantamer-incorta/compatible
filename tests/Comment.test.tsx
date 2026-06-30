@@ -1,5 +1,5 @@
 import React from 'react';
-import { ConfigProvider } from 'antd';
+import { ConfigProvider } from 'antd5';
 import { Comment } from '../src';
 import { render } from '@testing-library/react';
 

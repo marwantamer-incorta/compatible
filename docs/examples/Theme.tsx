@@ -1,6 +1,12 @@
-import { ConfigProvider, Menu, MenuProps } from 'antd';
+import { ConfigProvider, Menu, MenuProps } from 'antd5';
 import { defaultTheme, darkTheme } from '@ant-design/compatible';
-import { AppstoreOutlined, CalendarOutlined, LinkOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
+import {
+  AppstoreOutlined,
+  CalendarOutlined,
+  LinkOutlined,
+  MailOutlined,
+  SettingOutlined,
+} from '@ant-design/icons';
 import React from 'react';
 
 type MenuItem = Required<MenuProps>['items'][number];
@@ -44,28 +50,31 @@ const items: MenuItem[] = [
 
 const Demo = () => {
   return (
-    <Menu items={items} style={{width: 256}}
-          defaultSelectedKeys={['1']}
-          defaultOpenKeys={['sub1']}
-          mode="inline" />
-  )
-}
+    <Menu
+      items={items}
+      style={{ width: 256 }}
+      defaultSelectedKeys={['1']}
+      defaultOpenKeys={['sub1']}
+      mode="inline"
+    />
+  );
+};
 
 export default () => {
   return (
-    <div style={{display: 'flex'}}>
+    <div style={{ display: 'flex' }}>
       <div>
         Default:
         <ConfigProvider theme={defaultTheme}>
           <Demo />
         </ConfigProvider>
       </div>
-      <div style={{marginLeft: 40}}>
+      <div style={{ marginLeft: 40 }}>
         Dark:
         <ConfigProvider theme={darkTheme}>
           <Demo />
         </ConfigProvider>
       </div>
     </div>
-  )
-}
+  );
+};

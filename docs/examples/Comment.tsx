@@ -1,6 +1,6 @@
 import React, { useState, createElement } from 'react';
 import { DislikeFilled, DislikeOutlined, LikeFilled, LikeOutlined } from '@ant-design/icons';
-import { Avatar, Tooltip } from 'antd';
+import { Avatar, Tooltip } from 'antd5';
 import { Comment } from '../../src';
 
 // import { presetPalettes } from '@ant-design/colors'

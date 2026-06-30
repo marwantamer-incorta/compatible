@@ -1,4 +1,4 @@
-import type { ThemeConfig } from 'antd/lib/config-provider/context';
+import type { ThemeConfig } from 'antd5/lib/config-provider/context';
 import defaultAlgorithm from './default';
 import darkAlgorithm from './dark';
 
@@ -6,7 +6,7 @@ export { defaultAlgorithm, darkAlgorithm };
 
 const v4Token: ThemeConfig = {
   token: { borderRadius: 2, colorPrimary: '#1890ff', wireframe: true },
-}
+};
 
 export const defaultTheme: ThemeConfig = {
   ...v4Token,
@@ -23,7 +23,7 @@ export const defaultTheme: ThemeConfig = {
       itemHoverBg: 'transparent',
     },
   },
-}
+};
 
 export const darkTheme: ThemeConfig = {
   ...v4Token,
@@ -40,4 +40,4 @@ export const darkTheme: ThemeConfig = {
       itemHoverBg: 'transparent',
     },
   },
-}
+};

@@ -15,9 +15,8 @@ yarn add @ant-design/compatible@v5-compatible-v4
 Helps you to compatible different components between v4 and v5.
 
 ```diff
--- import { Button, Select, Dropdown } from 'antd';
+-- import { Button, Select, Dropdown } from 'antd5';
 ++ import { Button, Select, Dropdown } from '@ant-design/compatible';
 ```
 
 ## FAQ
-

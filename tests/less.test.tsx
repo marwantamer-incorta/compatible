@@ -1,4 +1,4 @@
-import { theme } from 'antd';
+import { theme } from 'antd5';
 import { render as lessRender } from 'less';
 import { render } from '@testing-library/react';
 import { updateCSS } from 'rc-util/lib/Dom/dynamicCSS';

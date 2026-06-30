@@ -1,9 +1,9 @@
 import type { DerivativeFunc } from '@ant-design/cssinjs';
 import { generate } from '@ant-design/colors';
 import genColorMapToken from './genColorMapToken';
-import type { GenerateColorMap, GenerateNeutralColorMap } from 'antd/lib/theme/themes/ColorMap';
-import type { MapToken, SeedToken } from 'antd/lib/theme/interface';
-import { theme } from 'antd';
+import type { GenerateColorMap, GenerateNeutralColorMap } from 'antd5/lib/theme/themes/ColorMap';
+import type { MapToken, SeedToken } from 'antd5/lib/theme/interface';
+import { theme } from 'antd5';
 import { TinyColor } from '@ctrl/tinycolor';
 
 const { darkAlgorithm } = theme;
